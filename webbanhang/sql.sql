@@ -1,0 +1,4 @@
+ALTER TABLE account 
+ADD COLUMN login_attempts INT DEFAULT 0,
+ADD COLUMN is_locked TINYINT DEFAULT 0,
+ADD COLUMN locked_until DATETIME NULL;
